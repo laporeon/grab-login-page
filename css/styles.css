@@ -11,14 +11,12 @@
 :root {
     font-size: 62.5%;
     --blue: #4E5BEE;
-    --red: #FF5757;
     --gray: #F8F8F8;
 }
 
 .container {
-    max-width: 100vw;
+    width: 100vw;
     height: 100vh;
-    display: flex;
 }
 
 .signup {
@@ -26,19 +24,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15rem;
+    justify-content: center;
     border-radius: 15px 0 0 15px;
+    position: relative;
+    width: 30%;
+    height: 100vh;
 }
 
 .signup .logo {
-    width: 25vh;
+    width: 150px;
 }
 
-.interview {
+.interview img {
     height: 100vh;
     position: absolute;
-    left: 30%;
+    left: 20%;
     padding: 1rem;
+    top: 0;
 }
 
 form {
@@ -68,6 +70,11 @@ form input[type=submit] {
     cursor: pointer;
 }
 
+form input[type=submit]:hover {
+    letter-spacing: .1rem; 
+    color: #4E5BEE;
+}
+
 .input-field {
     position: relative;
 }
@@ -80,13 +87,13 @@ form input[type=submit] {
 }
 
 form input:nth-child(1), form input:nth-child(2){
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
 }
 
 .signup p {
     font-size: 1.2rem;
     color: var(--gray);
-    margin: 8rem 0 .5rem;
+   margin-bottom: .5rem;
 }
 
 .signup a {
@@ -95,24 +102,22 @@ form input:nth-child(1), form input:nth-child(2){
     font-weight: 900;
 }
 
+span {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    color: #fff;
+}
+
 @media only screen and (max-width: 800px) {
     .interview {
         display: none;
     }
 
-    .container {
-        max-width: 100vw;
-        max-height: 100vh;
-    }
-
     .signup {
-        width: 100%;
-        height: 100%;
-    }
-
-    p, a {
         width: 100vw;
-        text-align: center;
+        height: 100vh;
+        /* overflow: hidden; */
     }
 
 }
