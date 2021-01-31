@@ -9,28 +9,33 @@
   </head>
   <body>
       <main class="container">
+
         <section class="signup">
           <img src="./assets/logo-grab.svg" class="logo">
 
-          <form action="#">
+          <form action="#" id="form">
             <div class="input-field">
               <i class="fas fa-at fa-2x"></i>
               <input type="email" name="email" id="email">
+              <span id="error"></span>
             </div>
 
             <div class="input-field">
               <i class="fas fa-lock fa-2x"></i>
               <input type="password" name="password" id="password">
+              <span id="error"></span>
             </div>
-            <input type="submit" value=Entrar>
+            <input type="submit" value=Entrar id="submit">
           </form>
           <p>problemas para entrar?</p>
           <a href="#">clique aqui</a>
         </section>
-        
-        <img src="./assets/undraw_interview_rmcf.svg" class="interview">
-      </main>
 
+        <aside class="interview">
+          <img src="./assets/undraw_interview_rmcf.svg">
+        </aside>
+
+      </main>
 
       <script src="./js/script.js"></script>
   </body>
